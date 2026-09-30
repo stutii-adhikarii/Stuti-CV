@@ -26,6 +26,13 @@
       LinkedIn: <a href="https://www.linkedin.com/in/stutiadhikari" target="_blank" >stutiadhikari</a>
     </address>
 
+    <!-- Download CV -->
+    <p>
+      <a href="Stuti_Adhikari_CV.pdf" download="Stuti_Adhikari_CV.pdf">
+        <button type="button">Download CV</button>
+      </a>
+    </p>
+
     <nav>
       <ul>
         <li><a href="#objective"> Career Objective</a></li>
@@ -36,6 +43,7 @@
         <li><a href="#personal-projects">Personal Projects</a></li>
         <li><a href="#achievements">Achievements</a></li>
         <li><a href="#references">References</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -237,6 +245,50 @@
         <a href="mailto:kamallama027@gmail.com">kamallama027@gmail.com</a>
       </p>
       <p>Available upon request.</p>
+    </section>
+
+    <!-- Contact form -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+
+      <form action="mailto:stutiadhikari3@gmail.com" method="post" enctype="text/plain">
+        <fieldset>
+          <legend>Send me a message</legend>
+
+          <p>
+            <label for="name">Full Name </label><br>
+            <input type="text" id="name" name="name" placeholder="Your full name" minlength="2" maxlength="50" required>
+          </p>
+
+          <p>
+            <label for="email">Email </label><br>
+            <input type="email" id="email" name="email" placeholder="you@example.com" maxlength="100" required>
+          </p>
+
+          <p>
+            <label for="phone">Phone (optional)</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="98XXXXXXXX" maxlength="10" pattern="9[78][0-9]{8}">
+          </p>
+
+          <p>
+            <label for="subject">Subject </label><br>
+            <input type="text" id="subject" name="subject" placeholder="What is this about?" minlength="3" maxlength="100" required>
+          </p>
+
+          <p>
+            <label for="message">Message (10 to 500 characters)</label><br>
+            <textarea id="message" name="message" rows="6" cols="40" placeholder="Write your message here..." minlength="10" maxlength="500" required></textarea>
+          </p>
+
+          <p>
+            <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent">I agree to be contacted about this message </label>
+          </p>
+
+          <button type="submit">Send Message</button>
+          <button type="reset">Clear</button>
+        </fieldset>
+      </form>
     </section>
 
   </main>
